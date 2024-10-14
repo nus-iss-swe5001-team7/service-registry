@@ -72,17 +72,7 @@
 			<version>2.4.0</version> <!-- Use the version compatible with your Spring Cloud version -->
 		</dependency>
 
-		<dependency>
-			<groupId>software.amazon.awssdk</groupId>
-			<artifactId>awssdk-core</artifactId>
-			<version>2.20.57</version>
-		</dependency>
 
-   		 <dependency>
-			<groupId>software.amazon.awssdk</groupId>
-			<artifactId>s3</artifactId>
-			<version>2.20.57</version>	<!-- Update as necessary -->
-   		 </dependency>
 
 	</dependencies>
 
