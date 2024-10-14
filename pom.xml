@@ -75,13 +75,13 @@
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>
 			<artifactId>awssdk-core</artifactId>
-			<version>2.20.4</version> <!-- Use the latest version -->
+			<version>2.20.57</version>
 		</dependency>
 
    		 <dependency>
 			<groupId>software.amazon.awssdk</groupId>
 			<artifactId>s3</artifactId>
-			<version>2.20.54</version> <!-- Update as necessary -->
+			<version>2.20.57</version>	<!-- Update as necessary -->
    		 </dependency>
 
 	</dependencies>
