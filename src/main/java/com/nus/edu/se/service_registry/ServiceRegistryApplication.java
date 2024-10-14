@@ -12,4 +12,17 @@ public class ServiceRegistryApplication {
 		SpringApplication.run(ServiceRegistryApplication.class, args);
 	}
 
+	@Bean
+	@Autowired
+	@Profile("aws")
+	public EurekaInstanceConfigBean eurekaInstanceConfigBean(InetUtils inetUtils) {
+		EurekaInstanceConfigBean config = new EurekaInstanceConfigBean(inetUtils);
+		AmazonInfo info = AmazonInfo.Builder.newBuilder().autoBuild("eureka");
+		config.setHostname(info.get(AmazonInfo.MetaDataKey.publicHostname));
+		config.setIpAddress(info.get(AmazonInfo.MetaDataKey.publicIpv4));
+		config.setDataCenterInfo(info);
+		return config;      
+}
+
+
 }
